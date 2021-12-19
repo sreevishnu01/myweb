@@ -32,9 +32,10 @@ $font-size-custom:       $font-size-base * 5.25;
 @import './navbar';
 @import './coustom';
 @import './animation';
+@import './main';
 
 body{
-    background-color: $dark-gry;
+    // background-color: $dark-gry;
 }
 h1, h2{
     font-family: $font-family-nunito;

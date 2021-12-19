@@ -69,14 +69,11 @@
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) { 
     .col-lg-1{
-        width: 5rem;
         position: fixed;
         transition: width 1.2s;
-        overflow: hidden;
     }
     .col-lg-2{
         position: fixed;
-        width: 15%;
         transition: width 1.2s;
     }
     .sidebar-main{
@@ -97,7 +94,6 @@
             justify-content: space-evenly;
            .primary-nav{
                 margin-top: 53px;
-                overflow: hidden;
                 li{
                     span{
                         display: none;
@@ -125,10 +121,11 @@
         }
 
         .primary-nav{
-            margin: 0 auto ;
             display: flex;
             flex-direction: column;
+            justify-content: center;
             align-items: center;
+
             ul{
                 padding: 0;
                 li{
@@ -142,7 +139,7 @@
                         line-height: 5rem;
                         span{
                             margin-left: .7rem;
-                            position: fixed; 
+                            overflow: hidden;
                         }
                     }
                 }
@@ -168,4 +165,5 @@
         width: 100%;
         height: 100vh;
     }
+
 }

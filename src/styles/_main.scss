@@ -1,0 +1,11 @@
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    .main-inactive{
+        margin-left: 6rem;
+        transition: .9s ease-in;
+    }
+    .main-active{
+        margin-left: 16.5%;
+        transition: .7s ease-in;
+    }
+}

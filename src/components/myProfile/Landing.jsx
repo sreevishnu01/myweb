@@ -16,8 +16,8 @@ function Landing() {
     }, [])
 
     return (
-        <Container className='full-width position-relative'>
-            <div className="big-text position-absolute top-50 start-0 translate-middle-y">
+        <Container className=''>
+            <div className="big-text">
                 {string.map((e, index) => (
                     <h1 key={index}>
                         {e.map((str, index) => (

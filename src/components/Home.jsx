@@ -25,8 +25,9 @@ function Home() {
                             </div>
                         </Container>
                     </Col>
-                    <Col>
-                        <Outlet />
+                    <Col className={inactive ? "main-active" : "main-inactive"}>
+                        <div className="red">sscsdcscdcscsdcsdcdscdss</div>
+
                     </Col>
                 </Row>
             </Container>
