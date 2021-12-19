@@ -1,0 +1,49 @@
+/* The following block can be included in a custom.scss */
+
+/* make the customizations */
+$theme-colors: (
+    "info": tomato,
+    "danger": teal
+);
+
+$white: #ffffff;
+$black: #000000;
+$dark-gry:#181818;
+$dark-white:#909096;
+$gry:    #282828;
+$color-light: fuchsia;
+
+$font-family-nunito: Nunito;
+$font-family-unica: Unica;
+
+$font-weight-light:           200;
+$font-weight-normal:          600;
+$font-weight-bold:            800;
+
+// $font-size-root:              null;
+$font-size-base:              1rem; // Assumes the browser default, typically `16px`
+$font-size-sm:                $font-size-base * 1.2;
+$font-size-lg:           $font-size-base * 2.25;
+$font-size-custom:       $font-size-base * 5.25;
+
+/* import bootstrap to set changes */
+@import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;600;800&family=Unica+One&display=swap');
+@import './navbar';
+@import './coustom';
+@import './animation';
+
+body{
+    background-color: $dark-gry;
+}
+h1, h2{
+    font-family: $font-family-nunito;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
