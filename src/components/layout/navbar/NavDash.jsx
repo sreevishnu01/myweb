@@ -8,41 +8,37 @@ function NavDash({ inactive }) {
 
     return (
         <>
-            <div>
-                <Container className='primary-nav'>
-                    <ul>
-                        {NavData.map(e => (
-                            <li key={e.id}>
-                                <Link to={e.path}>
-                                    {e.icon}
-                                    <span>{e.title}</span>
-                                </Link>
-                            </li>
-                        ))}
-                    </ul>
-                </Container>
-            </div>
-            <div className='social'>
-                <Container>
-                    <ul className='social-icons'>
-                        <li>
-                            <Link to="#">
-                                <FaInstagram size="2rem" />
+            <Container className='primary-nav'>
+                <ul>
+                    {NavData.map(e => (
+                        <li key={e.id}>
+                            <Link to={e.path}>
+                                {e.icon}
+                                <span>{e.title}</span>
                             </Link>
                         </li>
-                        <li>
-                            <Link to="#">
-                                <FaLinkedin size="2rem" />
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="#">
-                                <FaGithub size="2rem" />
-                            </Link>
-                        </li>
-                    </ul>
-                </Container>
-            </div>
+                    ))}
+                </ul>
+            </Container>
+            <Container className='social'>
+                <ul className='social-icons'>
+                    <li>
+                        <Link to="#">
+                            <FaInstagram size="2rem" />
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="#">
+                            <FaLinkedin size="2rem" />
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="#">
+                            <FaGithub size="2rem" />
+                        </Link>
+                    </li>
+                </ul>
+            </Container>
         </>
 
     )
