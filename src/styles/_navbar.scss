@@ -2,24 +2,27 @@
     .col{
         flex: none;
     }
-.sidebar-main{
-    background-color: $black;
-    padding-bottom: .3rem;
-    overflow: hidden;
+    .sidebar-main{
+        background-color: $black;
+        padding-bottom: .3rem;
+        overflow: hidden;
     
-    .collapse-btn{
-        cursor: pointer;
-        color: $dark-white;
-        position: relative;
-        left: 96%;
+        .collapse-btn{
+            cursor: pointer;
+            color: $dark-white;
+            position: relative;
+            left: 96%;
+        }
+    
     }
     .navitem-inactive{
-        overflow: hidden;
-        height: 0%;
-        display: none;
+        .primary-nav, .social{
+            overflow: hidden;
+            height: 0%;
+            display: none;
+        }
     }
     .navitem-active{
-        height: 100vh;
         .primary-nav{
             display: flex;
             justify-content: center;
@@ -31,10 +34,6 @@
                         color: fuchsia;
                     }
                     a{
-                        color: $dark-white;
-                        font-family: Unica;
-                        font-size: 1.5rem;
-                        line-height: 5rem;
                         span{
                             margin-left: 1rem;
                         }
@@ -43,6 +42,14 @@
                 .line{
                     border-bottom: 1px solid $gry; 
                 }
+            }
+        }
+        li{
+            a{
+                color: $dark-white;
+                font-family: Unica;
+                font-size: 1.5rem;
+                line-height: 5rem;
             }
         }
         .social{
@@ -60,19 +67,18 @@
             }
         }
     }
-
-
-}
 }
 
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) { 
     .col-lg-1{
+        width: 120px;
         position: fixed;
         transition: width 1.2s;
     }
     .col-lg-2{
+        width: 260px;
         position: fixed;
         transition: width 1.2s;
     }
@@ -81,89 +87,75 @@
        width: 100%;
        height: 100vh;
        padding: 0;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
 
-       .collapse-btn{
+        .collapse-btn{
             cursor: pointer;
             color: $dark-white;
-            padding-left: .3rem;
-       }
-       .navitem-inactive{
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-           .primary-nav{
-                margin-top: 53px;
-                li{
-                    span{
-                        display: none;
-                    }
-                }
-            }
-            .social{
-                display: flex;
-                justify-content: center;
-                li{
-                    margin-bottom: 16px;
-                }
-           }
         }
-        .navitem-active{
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-
-            .social-icons{  
-                display: flex;
-                justify-content: space-around;
+    
+        li{
+            :hover{
+                color: fuchsia;
+            }
+            a{
+                color: $dark-white;
+                font-family: Unica;
+                font-size: 1.5rem;
+                line-height: 4rem;
             }
         }
+    }
+    .primary-nav{
+        padding:0;
+        text-align: center;
+        ul{
+            display: inline-block;
+            padding: 0;
+        }
+    }
+    .social{
+        text-align: center;
+        .social-icons{
+            padding: 0;
+        }
+    }
 
+    .navitem-inactive{
+        .collapse-btn{
+            text-align: center;
+        }
         .primary-nav{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-
             ul{
-                padding: 0;
                 li{
-                    :hover{
-                        color: fuchsia;
-                    }
                     a{
-                        color: $dark-white;
-                        font-family: Unica;
-                        font-size: 1.5rem;
-                        line-height: 5rem;
                         span{
-                            margin-left: .7rem;
                             overflow: hidden;
+                            position: fixed;
+                            display: none;
                         }
                     }
                 }
             }
-        } 
-
-        .social{
-            padding: 0%;
-            .social-icons{
-                padding: 0;
+        }
+    }
+    .navitem-active{
+        .primary-nav{
+            overflow: hidden !important;
+            ul{
                 li{
-                    :hover{
-                        color: fuchsia;
+                    a{
+                        span{
+                            display: inline-flex;
+                            position: fixed;
+                            padding-left: 1.2rem;
+                        }
                     }
                 }
             }
-
         }
-
-
-    }
-    .red{
-        width: 100%;
-        height: 100vh;
     }
 
 }

@@ -9,7 +9,7 @@ function NavDash({ inactive }) {
     return (
         <>
             <div>
-                <Container fluid className='p-0 primary-nav'>
+                <Container className='primary-nav'>
                     <ul>
                         {NavData.map(e => (
                             <li key={e.id}>
@@ -22,8 +22,8 @@ function NavDash({ inactive }) {
                     </ul>
                 </Container>
             </div>
-            <div>
-                <Container fluid className='social'>
+            <div className='social'>
+                <Container>
                     <ul className='social-icons'>
                         <li>
                             <Link to="#">

@@ -11,8 +11,8 @@ function Home() {
 
             <Container fluid className='p-0'>
                 <Row>
-                    <Col className={inactive ? "col-lg-2" : "col-lg-1"}>
-                        <Container fluid className='sidebar-main'>
+                    <Col className={inactive ? "col-lg-2 " : "col-lg-1"}>
+                        <Container fluid className={inactive ? 'sidebar-main navitem-active' : 'navitem-inactive sidebar-main'}>
                             <div className="collapse-btn pt-1">
                                 {inactive ? (
                                     <FaTimes size="2rem" onClick={() => setInactive(!inactive)} />
@@ -20,9 +20,7 @@ function Home() {
                                     <FaBars size="2rem" onClick={() => setInactive(!inactive)} />
                                 )}
                             </div>
-                            <div className={inactive ? "navitem-active" : "navitem-inactive"}>
-                                <NavDash />
-                            </div>
+                            <NavDash />
                         </Container>
                     </Col>
                     <Col className={inactive ? "main-active" : "main-inactive"}>
