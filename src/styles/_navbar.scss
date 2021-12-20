@@ -1,17 +1,22 @@
 @media (max-width: 991px) {
-    .col{
+    .act{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        position: fixed;
         flex: none;
     }
     .sidebar-main{
         background-color: $black;
         padding-bottom: .3rem;
         overflow: hidden;
+        padding-right: 42px;
     
         .collapse-btn{
             cursor: pointer;
             color: $dark-white;
             position: relative;
-            left: 96%;
+            left: 98%;
         }
     
     }
@@ -23,6 +28,7 @@
         }
     }
     .navitem-active{
+        height: 120vh;
         .primary-nav{
             display: flex;
             justify-content: center;
@@ -49,7 +55,7 @@
                 color: $dark-white;
                 font-family: Unica;
                 font-size: 1.5rem;
-                line-height: 5rem;
+                line-height: 4rem;
             }
         }
         .social{

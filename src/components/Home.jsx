@@ -5,13 +5,13 @@ import NavDash from './layout/navbar/NavDash'
 import { FaBars, FaTimes } from 'react-icons/fa'
 
 function Home() {
-    const [inactive, setInactive] = useState(true);
+    const [inactive, setInactive] = useState(false);
     return (
         <>
 
-            <Container fluid className='p-0'>
+            <Container fluid className='p-0 m-0'>
                 <Row>
-                    <Col className={inactive ? "col-lg-2 " : "col-lg-1"}>
+                    <Col sm={12} className={inactive ? "col-lg-2 act" : "col-lg-1"}>
                         <Container fluid className={inactive ? 'sidebar-main navitem-active' : 'navitem-inactive sidebar-main'}>
                             <div className="collapse-btn pt-1">
                                 {inactive ? (

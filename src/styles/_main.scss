@@ -1,11 +1,172 @@
+// small
+@media (max-width: 991px) {
+    .fullpage{
+        height: 100vh;
+        .col{
+            flex: none;
+        }
+        .vertical-center{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+    }
+    .big-text{
+        display: inline;
+        h1{
+            font-weight: $font-weight-bold;
+            font-size: $font-size-lg;
+            color: $color-light;
+        }
+        h2{
+            font-weight: $font-weight-bold;
+            font-size: $font-size-lg;
+            color: $color-light;
+        }
+        p{
+            font-family: $font-family-unica;
+            font-weight: $font-weight-light;
+            color: $dark-white;
+            
+        }
+    
+    }
+    .detail{
+        p{
+            color: $white !important;
+            font-size: $font-size-base;
+            word-break: break-all;
+        }
+    }
+    .programing{
+        p{
+            word-break: break-all;
+        }
+    }
+
+}
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) { 
     .main-inactive{
-        margin-left: 10rem;
+        margin-left: 85px;
         transition: .9s ease-in;
     }
     .main-active{
-        margin-left: 16.5%;
+        margin-left: 280px;
         transition: .7s ease-in;
     }
+
+    .fullpage{
+        height: 100vh;
+        .vertical-center{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .big-text{
+        display: inline;
+        h1{
+            font-weight: $font-weight-bold;
+            font-size: $font-size-lg * 1.4;
+            color: $color-light;
+        }
+        h2{
+            font-weight: $font-weight-bold;
+            font-size: $font-size-lg;
+            color: $color-light;
+        }
+        p{
+            font-family: $font-family-unica;
+            font-weight: $font-weight-light;
+            color: $dark-white;
+        }
+    
+    }
+    .detail{
+        p{
+            color: $white !important;
+            font-size: $font-size-sm;
+        }
+    }
+
+    .programing{
+        height: 500px;
+        margin: 100px 0;
+        padding: 100px 0;
+    
+        p{
+            font-family: $font-family-unica;
+            color: #0e6b0e;
+            word-break: break-all;
+            
+        }
+        div{
+            display: inline;
+            animation: caret 1s infinite;
+            // white-space: pre;
+        }
+        @keyframes caret {
+            0%{
+                border: none;
+            }
+            100%{
+                // background-color: #20c20e;
+                border: 1px solid #20c20e;
+            }
+        }
+    }
+    
+
 }
+
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    .big-text{
+        display: inline;
+        h1{
+            font-weight: $font-weight-bold;
+            font-size: $font-size-lg * 1.8;
+            color: $color-light;
+        }
+        h2{
+            font-weight: $font-weight-bold;
+            font-size: $font-size-lg * 1.5;
+            color: $color-light;
+        }
+        p{
+            font-family: $font-family-unica;
+            font-weight: $font-weight-light;
+            color: $dark-white;
+        }
+    
+    }
+  
+ }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { 
+    .big-text{
+        display: inline;
+        h1{
+            font-weight: $font-weight-bold;
+            font-size: $font-size-custom;
+            color: $color-light;
+        }
+        h2{
+            font-weight: $font-weight-bold;
+            font-size: $font-size-lg * 1.5;
+            color: $color-light;
+        }
+        p{
+            font-family: $font-family-unica;
+            font-weight: $font-weight-light;
+            color: $dark-white;
+        }
+    
+    }
+ }
