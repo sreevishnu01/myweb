@@ -23,7 +23,7 @@ export const NavData = [
         id: 4,
         title: "Work",
         icon: <fa.FaWhmcs />,
-        path: "/"
+        path: "/towork"
     },
     {
         id: 5,

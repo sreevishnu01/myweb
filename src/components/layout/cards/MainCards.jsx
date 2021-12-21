@@ -1,0 +1,14 @@
+import React from 'react'
+import { Container, Row, Col } from 'react-bootstrap'
+
+
+
+function MainCards() {
+    return (
+        <>
+
+        </>
+    )
+}
+
+export default MainCards

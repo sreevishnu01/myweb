@@ -11,16 +11,19 @@ function Home() {
 
             <Container fluid className='p-0 m-0'>
                 <Row>
-                    <Col sm={12} className={inactive ? "col-lg-2 act" : "col-lg-1"}>
+                    <Col xs={12} id='topbar' className={inactive ? "col-lg-2" : "col-lg-1"}>
                         <Container fluid className={inactive ? 'sidebar-main navitem-active' : 'navitem-inactive sidebar-main'}>
-                            <div className="collapse-btn pt-1">
-                                {inactive ? (
-                                    <FaTimes size="2rem" onClick={() => setInactive(!inactive)} />
-                                ) : (
-                                    <FaBars size="2rem" onClick={() => setInactive(!inactive)} />
-                                )}
+                            <div className='sidebar-fix'>
+
+                                <div className="collapse-btn pt-1">
+                                    {inactive ? (
+                                        <FaTimes size="2rem" onClick={() => setInactive(!inactive)} />
+                                    ) : (
+                                        <FaBars size="2rem" onClick={() => setInactive(!inactive)} />
+                                    )}
+                                </div>
+                                <NavDash />
                             </div>
-                            <NavDash />
                         </Container>
                     </Col>
                     <Col className={inactive ? "main-active" : "main-inactive"}>

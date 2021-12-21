@@ -1,24 +1,35 @@
 @media (max-width: 991px) {
-    .act{
+
+    #topbar{
         padding: 0;
         margin: 0;
-        width: 100%;
-        position: fixed;
-        flex: none;
     }
     .sidebar-main{
+        // background-color: $black;
+        // padding-bottom: .3rem;
+        // overflow: hidden;
+        // padding-right: 42px;
+    
+        // .collapse-btn{
+        //     cursor: pointer;
+        //     color: $dark-white;
+        //     position: relative;
+        //     left: 98%;
+        // }
+        padding: 0;
+    
+    }
+    .sidebar-fix{
         background-color: $black;
         padding-bottom: .3rem;
         overflow: hidden;
-        padding-right: 42px;
     
         .collapse-btn{
             cursor: pointer;
             color: $dark-white;
             position: relative;
-            left: 98%;
+            left: 90%;
         }
-    
     }
     .navitem-inactive{
         .primary-nav, .social{
@@ -28,7 +39,9 @@
         }
     }
     .navitem-active{
-        height: 120vh;
+        .sidebar-fix{
+            height: 600px;
+        }
         .primary-nav{
             display: flex;
             justify-content: center;
@@ -79,24 +92,25 @@
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) { 
     .col-lg-1{
-        width: 80px;
-        position: fixed;
         transition: width 1.2s;
     }
     .col-lg-2{
-        width: 260px;
-        position: fixed;
         transition: width 1.2s;
     }
     .sidebar-main{
+        margin: 0;
+        padding: 0;
+    }
+    .sidebar-fix{
        background-color: $black;
-       width: 100%;
        height: 100vh;
        padding: 0;
        padding: 0 12px;
+       position: fixed;
        display: flex;
        flex-direction: column;
        justify-content: space-between;
+
 
         .collapse-btn{
             cursor: pointer;
@@ -126,6 +140,7 @@
     }
     .social{
         padding: 0;
+        
         .social-icons{
             padding: 0;
 
@@ -133,6 +148,10 @@
     }
 
     .navitem-inactive{
+        .sidebar-fix{
+            width: 60px;
+            transition: width 1.2s;
+        }
         .primary-nav{
             ul{
                 li{
@@ -160,6 +179,10 @@
         }
     }
     .navitem-active{
+        .sidebar-fix{
+            width: 190px;
+            transition: width 1.2s;
+        }
         .primary-nav{
             ul{
                 li{
@@ -177,6 +200,7 @@
             .social-icons{
                 display: flex;
                 height: 10rem;
+                transition: padding .7s ease-in;
                 li{
                     padding-left: 1rem;
                 }

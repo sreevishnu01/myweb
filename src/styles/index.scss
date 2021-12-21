@@ -33,6 +33,7 @@ $font-size-custom:       $font-size-base * 5.25;
 @import './coustom';
 @import './animation';
 @import './main';
+@import './cards';
 
 body{
     background-color: $dark-gry;
