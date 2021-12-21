@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
+import MainCards from '../layout/cards/MainCards'
 // import { useSpring, animated } from 'react-spring'
 
 
@@ -41,35 +42,38 @@ function Landing() {
     }, [typeingString])
 
     return (
-        <Container fluid>
-            <Row>
-                <Col md={7} className='center-flex'>
-                    <Container className='p-0'>
-                        <div className="big-text">
-                            {string.map((e, index) => (
-                                <h1 key={index}>
-                                    {e.map((str, index) => (
-                                        <span id='ruberband' key={index}>{str}</span>
-                                    ))}
-                                </h1>
-                            ))}
-                            <p>Front End Developer / Back End Developer</p>
-                        </div>
-                    </Container>
+        // <Container fluid>
+        //     <Row>
+        //         <Col md={7} className='center-flex'>
+        //             <Container className='p-0'>
+        //                 <div className="big-text">
+        //                     {string.map((e, index) => (
+        //                         <h1 key={index}>
+        //                             {e.map((str, index) => (
+        //                                 <span id='ruberband' key={index}>{str}</span>
+        //                             ))}
+        //                         </h1>
+        //                     ))}
+        //                     <p>Front End Developer / Back End Developer</p>
+        //                 </div>
+        //             </Container>
 
-                </Col>
-                <Col>
-                    <Container>
-                        <div className='programing'>
-                            <p>{typeingString}
-                                <div> </div>
-                            </p>
-                        </div>
+        //         </Col>
+        //         <Col>
+        //             <Container>
+        //                 <div className='programing'>
+        //                     <p>{typeingString}
+        //                         <div> </div>
+        //                     </p>
+        //                 </div>
 
-                    </Container>
-                </Col>
-            </Row>
-        </Container>
+        //             </Container>
+        //         </Col>
+        //     </Row>
+        // </Container>
+        <>
+            <MainCards id={0} />
+        </>
     )
 }
 

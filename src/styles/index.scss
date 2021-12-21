@@ -2,10 +2,23 @@
 
 /* make the customizations */
 $theme-colors: (
+    "primary": #d63384,
     "info": tomato,
-    "danger": teal
+    "light": #0dcaf0,
+    "danger": #181818,
+    "success":#6610f2
+
+    
 );
 
+// 'Primary',
+//   'Secondary',
+//   'Success',
+//   'Danger',
+//   'Warning',
+//   'Info',
+//   'Light',
+//   'Dark',
 $white: #ffffff;
 $black: #000000;
 $dark-gry:#181818;

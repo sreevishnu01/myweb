@@ -1,0 +1,70 @@
+// small
+@media (max-width: 991px) {
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+
+
+    .big-text{
+        display: inline;
+        h1{
+            font-weight: $font-weight-bold;
+            font-size: $font-size-lg * 1.4;
+            color: $color-light;
+        }
+        h2{
+            font-weight: $font-weight-bold;
+            font-size: $font-size-lg;
+            color: $color-light;
+        }
+        p{
+            font-family: $font-family-unica;
+            font-weight: $font-weight-light;
+            color: $dark-white;
+        }
+    
+    }
+    .detail{
+        p{
+            color: $white !important;
+            font-size: $font-size-sm;
+        }
+    }
+
+
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    .big-text{
+        h1{
+            font-size: $font-size-lg * 1.8;
+        }
+        h2{
+            font-size: $font-size-lg * 1.5;
+        }
+        p{
+            font-weight: $font-weight-light;
+        }
+    
+    }
+  
+ }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { 
+    .big-text{
+        h1{
+            font-size: $font-size-custom;
+        }
+        h2{
+            font-size: $font-size-lg * 1.5;
+        }
+        p{
+            font-weight: $font-weight-light;
+        }
+    
+    }
+ }

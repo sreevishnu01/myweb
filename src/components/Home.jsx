@@ -8,13 +8,11 @@ function Home() {
     const [inactive, setInactive] = useState(false);
     return (
         <>
-
             <Container fluid className='p-0 m-0'>
                 <Row>
                     <Col xs={12} id='topbar' className={inactive ? "col-lg-2" : "col-lg-1"}>
                         <Container fluid className={inactive ? 'sidebar-main navitem-active' : 'navitem-inactive sidebar-main'}>
                             <div className='sidebar-fix'>
-
                                 <div className="collapse-btn pt-1">
                                     {inactive ? (
                                         <FaTimes size="2rem" onClick={() => setInactive(!inactive)} />
@@ -27,7 +25,9 @@ function Home() {
                         </Container>
                     </Col>
                     <Col className={inactive ? "main-active" : "main-inactive"}>
-                        <Outlet />
+                        <Container fluid className='fullpage'>
+                            <Outlet />
+                        </Container>
                     </Col>
                 </Row>
             </Container>
