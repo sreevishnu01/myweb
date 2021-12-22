@@ -1,3 +1,12 @@
+.spiner-cener{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
     ::-webkit-scrollbar{
@@ -34,4 +43,37 @@
             transform: scale(1, 1);
         }
     }
+
+
+    // typing
+      .programing{
+        // height: 500px;
+        // margin: 100px 0;
+        // padding: 100px 0;
+        cursor: default;
+    
+        p{
+            font-family: $font-family-unica;
+            color: #0e6b0e;
+            word-break: break-all;
+            display: inline;
+            
+        }
+        #blink{
+            display: inline;
+            animation: caret 1s infinite;
+            // white-space: pre;
+        }
+        @keyframes caret {
+            0%{
+                border: none;
+            }
+            100%{
+                // background-color: #20c20e;
+                border: 1px solid #20c20e;
+            }
+        }
+    }
+    // Loading screen
+    
 }

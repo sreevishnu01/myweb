@@ -7,24 +7,13 @@ function TypingAnim() {
     const index = useRef(0)
 
     useEffect(() => {
-        const typeing = `function findCard(cards, cardnum) {
-            let high = cards.length - 1;
-            let low = 0;
-            while (low <= high) {
-                let mid = Math.round((high + low) / 2)
-                console.log('mid :', mid)
-                if (cards[mid] === cardnum) {
-                    console.log('position:', mid, 'cardNO:', cards[mid])
-                    return 0;
-                }
-                else if (cards[mid] > cardnum) {
-                    low = mid + 1
-                }
-                else {
-                    high = mid - 1
-                }
-            }
-        }`
+        const typeing = `<p>function programer(name){<br></p>
+            <p>&nbsp;console.log(&quot;Hello&quot;,name)<br>}</p><br>
+            setTimeout(() => {
+                setTypingString((value) => value + typeing.charAt(index.current))
+                index.current += 1
+            }, 100)
+            `
         setTimeout(() => {
             setTypingString((value) => value + typeing.charAt(index.current))
             index.current += 1
@@ -33,7 +22,10 @@ function TypingAnim() {
 
     return (
         <>
-            <p>{typeingString}</p>
+            <div className="programing">
+                <p dangerouslySetInnerHTML={{ __html: typeingString }}></p>
+                <p id='blink'>&nbsp;</p>
+            </div>
 
         </>
     )

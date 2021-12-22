@@ -36,5 +36,5 @@ export const NavData = [
         title: "Contact",
         icon: <fa.FaServer />,
         path: ""
-    },
+    }
 ]

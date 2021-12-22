@@ -39,4 +39,5 @@ export const TextData = [
         text: "Hi,/I'm Vishnu,/web developer",
         tag: 2
     },
+
 ]
