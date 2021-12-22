@@ -53,6 +53,10 @@ body{
 }
 h1, h2{
     font-family: $font-family-nunito;
+    word-break: keep-all;
+}
+p{
+    word-break: break-word;
 }
 
 ul{

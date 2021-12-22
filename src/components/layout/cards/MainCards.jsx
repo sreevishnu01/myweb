@@ -1,28 +1,31 @@
 import React, { useState, useEffect } from 'react'
-import { Container, Row, Col, Card, ProgressBar } from 'react-bootstrap'
+import { Row, Col } from 'react-bootstrap'
 import { TextData } from '../../../assets/TextData'
+import { useParams } from 'react-router-dom'
 
-// crate data that have all the esntnal details for className
 
-
-function MainCards({ id }) {
-    const text = TextData[id]
-    const CustomTag = `h${text.tag}`
+function MainCards() {
+    const { paramId } = useParams()
+    const [text, setText] = useState({})
     const [string, setString] = useState([])
+    const [CustomTag, setCustom] = useState('')
 
     useEffect(() => {
         // [["Hi,"], ["I'm Vishnu,"], ["web developer "]]
+        const data = TextData.find(e => e.id === paramId)
+        setText(data)
+        setCustom(`h${data.tag}`)
         const test = []
-        let value = text.text.split("/")
+        let value = data.text.split("/")
         value.forEach(e => test.push([...e]))
         setString(test)
-    }, [id])
+    }, [paramId])
 
     return (
         <>
             <div className="main">
                 <Row>
-                    <Col>
+                    <Col xs={12} lg>
                         <div className={text.home ? "big-text" : "big-text detail"}>
                             {string.map((e, index) => (
                                 <CustomTag key={index}>

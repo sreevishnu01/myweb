@@ -1,10 +1,10 @@
 import React from 'react'
-import { Container, Row, Col, Card, ProgressBar } from 'react-bootstrap'
+import { Container, Card, ProgressBar } from 'react-bootstrap'
 
 function SkillCard() {
     return (
         <>
-            <Container className="pe-5 me-5">
+            <Container>
                 <Card border="primary" bg='danger' style={{ height: '20rem' }} className="detail">
                     <Card.Body>
                         <Card.Title></Card.Title>

@@ -5,19 +5,7 @@
         margin: 0;
     }
     .sidebar-main{
-        // background-color: $black;
-        // padding-bottom: .3rem;
-        // overflow: hidden;
-        // padding-right: 42px;
-    
-        // .collapse-btn{
-        //     cursor: pointer;
-        //     color: $dark-white;
-        //     position: relative;
-        //     left: 98%;
-        // }
         padding: 0;
-    
     }
     .sidebar-fix{
         background-color: $black;
@@ -25,10 +13,11 @@
         overflow: hidden;
     
         .collapse-btn{
+            display: block;
             cursor: pointer;
             color: $dark-white;
-            position: relative;
-            left: 90%;
+            float: right;
+            margin-right: 10px;
         }
     }
     .navitem-inactive{
@@ -110,8 +99,6 @@
        display: flex;
        flex-direction: column;
        justify-content: space-between;
-
-
         .collapse-btn{
             cursor: pointer;
             color: $dark-white;
@@ -150,7 +137,7 @@
     .navitem-inactive{
         .sidebar-fix{
             width: 60px;
-            transition: width 1.2s;
+            transition: .5s ease-in;
         }
         .primary-nav{
             ul{
@@ -170,8 +157,8 @@
             .social-icons{
                 display: flex;
                 flex-direction: column;
+                justify-content: space-between;
                 padding: 0;
-                transition: all .3s ease-out;
                 li{
                     padding-bottom: 1rem;
                 }
@@ -180,8 +167,9 @@
     }
     .navitem-active{
         .sidebar-fix{
-            width: 190px;
-            transition: width 1.2s;
+            width: 170px;
+            transition: .5s ease-in;
+            padding: 0 15px;
         }
         .primary-nav{
             ul{
@@ -200,10 +188,8 @@
             .social-icons{
                 display: flex;
                 height: 10rem;
-                transition: padding .7s ease-in;
-                li{
-                    padding-left: 1rem;
-                }
+                justify-content: space-between;
+                transition: .7s ease-in;
             }
         }
     }

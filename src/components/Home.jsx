@@ -25,7 +25,7 @@ function Home() {
                         </Container>
                     </Col>
                     <Col className={inactive ? "main-active" : "main-inactive"}>
-                        <Container fluid className='fullpage'>
+                        <Container className='fullpage'>
                             <Outlet />
                         </Container>
                     </Col>

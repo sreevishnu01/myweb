@@ -1,12 +1,10 @@
-import React, { useRef } from 'react'
-import MainCards from '../layout/cards/MainCards'
+import React from 'react'
 
 function Work() {
 
     return (
         <>
 
-            <MainCards id={0} />
         </>
     )
 }
