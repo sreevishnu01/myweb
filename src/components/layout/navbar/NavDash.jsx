@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-import { NavData } from './NavData'
+import { NavData } from '../../../assets/NavData'
 import { FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa'
 
 function NavDash({ inactive }) {

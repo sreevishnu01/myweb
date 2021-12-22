@@ -1,5 +1,6 @@
 import TypingAnim from "../components/myProfile/TypingAnim";
 import SkillCard from "../components/myProfile/SkillCard";
+import Contact from "../components/myProfile/Contact";
 
 export const TextData = [
     {
@@ -7,7 +8,6 @@ export const TextData = [
         text: "Hi,/I'm Vishnu,/web developer",
         tag: 1,
         p: "Front End Developer / Back End Developer",
-        home: true,
         side: <TypingAnim />
     },
     {
@@ -26,18 +26,15 @@ export const TextData = [
     },
     {
         id: 'towork',
-        text: "Hi,/I'm Vishnu,/web developer",
+        text: "work profilo",
         tag: 2
     },
     {
-        id: 'Blog',
-        text: "Hi,/I'm Vishnu,/web developer",
-        tag: 2
-    },
-    {
-        id: 'Contact',
-        text: "Hi,/I'm Vishnu,/web developer",
-        tag: 2
+        id: 'contact',
+        text: "Contact me",
+        tag: 2,
+        p: " I'm interested in freelance opportunities  especially ambitious or large projects. However, if you have other request or question, don't hesitate to use the form.",
+        div: <Contact />
     },
 
 ]

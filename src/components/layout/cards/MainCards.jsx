@@ -45,13 +45,14 @@ function MainCards() {
                             <p>{text.p}</p>
                             <p>{text.p2}</p>
                         </div>
-
+                        {text.div}
                     </Col>
                     <Col>
                         {text.side}
                     </Col>
                 </Row>
-            </div>)}
+            </div>
+            )}
 
 
         </>

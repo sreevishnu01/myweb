@@ -13,11 +13,11 @@ function SkillCard() {
                         <p>JavaScript</p>
                         <ProgressBar animated variant="primary" now={90} />
                         <p>Python</p>
-                        <ProgressBar animated variant="success" now={70} />
+                        <ProgressBar animated variant="success" now={79} />
                         <p>React</p>
-                        <ProgressBar animated variant="light" now={60} />
+                        <ProgressBar animated variant="light" now={67} />
                         <p>Node</p>
-                        <ProgressBar animated variant="light" now={50} />
+                        <ProgressBar animated variant="info" now={50} />
                     </Card.Body>
                 </Card>
             </Container>
