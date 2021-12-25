@@ -33,7 +33,26 @@
         }
     }
 
-
+    // work
+    .slide{
+        margin: 10px auto;
+        // display: flex;
+        position: relative;
+        overflow: hidden;
+        
+    }
+    .work-imgs{
+        width: 400px;
+        height: 300px;
+        margin: 12px;
+        float: left;
+        
+        .card-img{
+            width: 400px;
+            height: 300px;
+            padding-right: 2px;
+        }
+    }
 }
 
 // X-Large devices (large desktops, 1200px and up)

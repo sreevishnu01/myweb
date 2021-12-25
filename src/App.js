@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Home from './components/Home';
 import MainCards from './components/layout/cards/MainCards';
 import Blog from './components/myBlog/Blog';
+import Work from './components/work/Work';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />}>
             <Route path='' element={<Navigate replace to="/home" />} />
+            <Route path='towork' element={<Work />} />
             <Route path=':paramId' element={<MainCards />} />
           </Route>
           <Route path='/myblog' element={<Blog />} />

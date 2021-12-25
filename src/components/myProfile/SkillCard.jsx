@@ -11,7 +11,7 @@ function SkillCard() {
                         <Card.Text>
                         </Card.Text>
                         <p>JavaScript</p>
-                        <ProgressBar animated variant="primary" now={90} />
+                        <ProgressBar animated variant="warning" now={90} />
                         <p>Python</p>
                         <ProgressBar animated variant="success" now={79} />
                         <p>React</p>

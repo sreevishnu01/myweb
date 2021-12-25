@@ -5,6 +5,7 @@ import NavDash from './layout/navbar/NavDash'
 import { FaBars, FaTimes } from 'react-icons/fa'
 
 function Home() {
+
     const [inactive, setInactive] = useState(false);
     return (
         <>
@@ -20,14 +21,12 @@ function Home() {
                                         <FaBars size="2rem" onClick={() => setInactive(!inactive)} />
                                     )}
                                 </div>
-                                <NavDash />
+                                <NavDash inactive={inactive} setInactive={setInactive} />
                             </div>
                         </Container>
                     </Col>
                     <Col className={inactive ? "main-active" : "main-inactive"}>
-                        <Container className='fullpage'>
-                            <Outlet />
-                        </Container>
+                        <Outlet />
                     </Col>
                 </Row>
             </Container>

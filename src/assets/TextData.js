@@ -8,13 +8,16 @@ export const TextData = [
         text: "Hi,/I'm Vishnu,/web developer",
         tag: 1,
         p: "Front End Developer / Back End Developer",
-        side: <TypingAnim />
+        side: <TypingAnim />,
+        home: true
     },
     {
         id: 'toabout',
         text: "My self",
         tag: 2,
-        p: "My passion for computers begins with video games. When I received my first computer at the age of 8 since then I knew that I wanted to work on computers for the rest of my life. This machine never ceases to amaze me. Using the computer all these years make me a natural problem solver."
+        p: "My passion for computers begins with video games. When I received my first computer at the age of 8 since then I knew that I wanted to work on computers for the rest of my life. This machine never ceases to amaze me. Using the computer all these years make me a natural problem solver.",
+        p2: "My IT career at the academic level begins with learning Hardware and Networking. Then my career switches to the world of programming. This machine never ceases to amaze me."
+
     },
     {
         id: 'toskill',
