@@ -29,7 +29,7 @@ function Work() {
                                 key={index} className="work-imgs " >
                                 <Card border='primary'>
                                     <a target='_blank' rel="noreferrer" href={Images[e].url}>
-                                        <Card.Img src={Images[e].src} />
+                                        <Card.Img src={process.env.PUBLIC_URL + Images[e].src} />
                                     </a>
                                 </Card>
                             </animated.div>
