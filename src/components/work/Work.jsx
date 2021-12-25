@@ -22,7 +22,7 @@ function Work() {
     return (
         <>
             {shuffle ? (
-                <Container className='fullpage center-grid'>
+                <Container className='fullpage center-grid work'>
                     <div className='slide main'>
                         {shuffle.slice(0, 3).map((e, index) => (
                             <animated.div style={styles}

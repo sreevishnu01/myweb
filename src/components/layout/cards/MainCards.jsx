@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { Row, Col, Container } from 'react-bootstrap'
 import { useParams } from 'react-router-dom'
 import useLoading from '../../../hooks/useLoading'

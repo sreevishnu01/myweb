@@ -49,12 +49,16 @@ $font-size-custom:       $font-size-base * 5.25;
 @import './main';
 @import './cards';
 
+*{
+    overflow-x: hidden;
+}
 body{
     background-color: $dark-gry;
 }
 h1, h2{
     font-family: $font-family-nunito;
     word-break: keep-all;
+    overflow: hidden;
 }
 p{
     word-break: break-word;

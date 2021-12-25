@@ -14,10 +14,11 @@ function TypingAnim() {
                 index.current += 1
             }, 100)
             `
-        setTimeout(() => {
+        const t = setTimeout(() => {
             setTypingString((value) => value + typeing.charAt(index.current))
             index.current += 1
         }, 100)
+        return () => clearInterval(t)
     }, [typeingString])
 
     return (

@@ -2,6 +2,7 @@
 .center{
     text-align: center;
 }
+
 @media (max-width: 991px) {
     .fullpage{
         height: 100vh;
@@ -11,6 +12,12 @@
     .main{
         position: absolute;
         top: 30%;
+    }
+    .work{
+        padding: 0;
+        .main{
+            padding: 12px;
+        }
     }
     .big-text{
         display: inline;
@@ -42,6 +49,36 @@
     .programing{
         p{
             word-break: break-all;
+        }
+    }
+      // typing
+
+      .programing{
+        // height: 500px;
+        // margin: 100px 0;
+        // padding: 100px 0;
+        cursor: default;
+    
+        p{
+            font-family: $font-family-unica;
+            color: #0e6b0e;
+            word-break: break-all;
+            display: inline;
+            
+        }
+        #blink{
+            display: inline;
+            animation: caret 1s infinite;
+            // white-space: pre;
+        }
+        @keyframes caret {
+            0%{
+                border: none;
+            }
+            100%{
+                // background-color: #20c20e;
+                border: 1px solid #20c20e;
+            }
         }
     }
 

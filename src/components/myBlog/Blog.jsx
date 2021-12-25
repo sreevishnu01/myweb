@@ -1,13 +1,11 @@
-// import React, { useState, useEffect } from 'react'
-// import { Col, Container, Row, Card } from 'react-bootstrap'
+import React from 'react'
 import useSplit from "../../hooks/useSplit"
-import MainCards from "../layout/cards/MainCards"
 
 
 
 function Blog() {
 
-    const { text, string, CustomTag } = useSplit()
+    const { string, CustomTag } = useSplit()
 
     return (
         <div className='fullpage center-grid center'>
