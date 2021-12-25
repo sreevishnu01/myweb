@@ -20,9 +20,15 @@ export const Images = [
 
     },
     {
+        name: 'shoping2',
+        src: '/images/shopingreact.png',
+        url: 'https://github.com/sreevishnu01/LogoIpsum-project'
+
+    },
+    {
         name: 'crypto',
         src: '/images/crypto1.png',
-        url: 'https://lit-dawn-38016.herokuapp.com/'
+        url: 'https://github.com/vishnupunni/cryptonite'
 
     },
 ]

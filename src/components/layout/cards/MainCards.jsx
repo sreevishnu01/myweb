@@ -1,29 +1,17 @@
 import React, { useState, useEffect } from 'react'
 import { Row, Col, Container } from 'react-bootstrap'
-import { TextData } from '../../../assets/TextData'
 import { useParams } from 'react-router-dom'
 import useLoading from '../../../hooks/useLoading'
 import Loading from '../anim&error/Loading'
+import useSplit from '../../../hooks/useSplit'
 
 
 function MainCards() {
+
     const { paramId } = useParams()
     const { loading } = useLoading(paramId)//custom hook fot loading
-    const [text, setText] = useState({})
-    const [string, setString] = useState([])
-    const [CustomTag, setCustom] = useState('')
 
-
-    useEffect(() => {
-        // [["Hi,"], ["I'm Vishnu,"], ["web developer "]]
-        const data = TextData.find(e => e.id === paramId)
-        setText(data)
-        setCustom(`h${data.tag}`)
-        const test = []
-        let value = data.text.split("/")
-        value.forEach(e => test.push([...e]))
-        setString(test)
-    }, [paramId])
+    const { text, string, CustomTag } = useSplit()
 
     return (
         <>

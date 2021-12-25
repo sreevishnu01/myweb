@@ -1,12 +1,13 @@
 // small
+.center{
+    text-align: center;
+}
 @media (max-width: 991px) {
     .fullpage{
         height: 100vh;
         position: relative;
     }
-    .center-grid{
-        
-    }
+    // .center-grid
     .main{
         position: absolute;
         top: 30%;
