@@ -19,23 +19,25 @@ function MainCards() {
                 <Loading />
             ) : (
                 <Container className='fullpage center-grid'>
-                    <div className="main">
+                    <div className="main ">
                         <Row>
-                            <Col xs={12} lg>
-                                <div className={text.home ? "big-text" : "big-text detail"}>
-                                    {string.map((e, index) => (
-                                        <CustomTag key={index}>
-                                            {e.map((str, index) => (
-                                                <span id='ruberband' key={index}>{str}</span>
-                                            ))}
-                                        </CustomTag>
-                                    ))}
-                                    <p>{text.p}</p>
-                                    <p>{text.p2}</p>
+                            <Col xs={12} lg className='center-grid'>
+                                <div>
+                                    <div className={text.home ? "big-text" : "big-text detail"}>
+                                        {string.map((e, index) => (
+                                            <CustomTag key={index}>
+                                                {e.map((str, index) => (
+                                                    <span id='ruberband' key={index}>{str}</span>
+                                                ))}
+                                            </CustomTag>
+                                        ))}
+                                        <p>{text.p}</p>
+                                        <p>{text.p2}</p>
+                                    </div>
+                                    {text.div}
                                 </div>
-                                {text.div}
                             </Col>
-                            <Col>
+                            <Col className='side-col'>
                                 {text.side}
                             </Col>
                         </Row>

@@ -1,14 +1,22 @@
 // small
 @media (max-width: 991px) {
+    // about
+    .section{
+        text-align: center;
+        h1{
+            display: block;
+        }
+    }
 
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) { 
 
-
+    
     .big-text{
         display: inline;
+
         h1{
             font-weight: $font-weight-bold;
             font-size: $font-size-lg * 1.4;
@@ -53,6 +61,9 @@
             padding-right: 2px;
         }
     }
+    
+
+   
 }
 
 // X-Large devices (large desktops, 1200px and up)
