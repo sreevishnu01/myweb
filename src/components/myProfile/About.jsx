@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { FaStar } from 'react-icons/fa'
 import { useSpring, animated, config } from 'react-spring'
 
