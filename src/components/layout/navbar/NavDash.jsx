@@ -28,7 +28,7 @@ function NavDash({ inactive, setInactive }) {
                         </a>
                     </li>
                     <li>
-                        <a target='_blank' rel="noreferrer" href="https://www.linkedin.com/in/vishnu-p-unni-839056189/">
+                        <a target='_blank' rel="noreferrer" href="https://www.linkedin.com/in/vishnu-unni/">
                             <FaLinkedin size="2rem" />
                         </a>
                     </li>
