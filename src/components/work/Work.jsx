@@ -27,7 +27,7 @@ function Work() {
                         {shuffle.slice(0, 3).map((e, index) => (
                             <animated.div style={styles}
                                 key={index} className="work-imgs " >
-                                <Card border='primary'>
+                                <Card border='danger'>
                                     <a target='_blank' rel="noreferrer" href={Images[e].url}>
                                         <Card.Img src={process.env.PUBLIC_URL + Images[e].src} />
                                     </a>
